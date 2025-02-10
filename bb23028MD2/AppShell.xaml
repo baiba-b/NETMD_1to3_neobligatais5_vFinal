@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="bb23028MD2.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:bb23028MD2"
+    Shell.FlyoutBehavior="Flyout"
+    Title="bb23028MD2">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    <ShellContent
+       Title="University"
+       ContentTemplate="{DataTemplate local:UniversityComponents}"
+       Route="UniversityComponents" />
+    <ShellContent
+        Title="CreateStudent"
+        ContentTemplate="{DataTemplate local:CreateStudent}"
+        Route="CreateStudent" />
+    <ShellContent
+       Title="CreateAssignment"
+       ContentTemplate="{DataTemplate local:CreateAssignment}"
+       Route="CreateAssignment" />
+    
+    <ShellContent
+        Title="CreateSubmission"
+        ContentTemplate="{DataTemplate local:CreateSubmission}"
+        Route="CreateSubmission" />
+    <ShellContent
+    Title="Assignment list"
+    ContentTemplate="{DataTemplate local:AssignmentListView}"
+    Route="AssignmentListView" />
+    <ShellContent
+    Title="Submission list"
+    ContentTemplate="{DataTemplate local:SubmissionListView}"
+    Route="SubmissionListView" />
+</Shell>

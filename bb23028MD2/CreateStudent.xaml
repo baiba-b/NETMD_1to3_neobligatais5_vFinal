@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bb23028MD2.CreateStudent"
+             Title="CreateStudent" NavigatedTo="ContentPage_NavigatedTo">
+    <VerticalStackLayout Margin="10" Spacing="10">
+        <Label 
+            Text="Name:" />
+        <Entry x:Name="NameTxt" Text="" 
+               MaxLength="35"
+               TextChanged="OnEntryTextChanged"
+               Unfocused="ValidateFields"> 
+        </Entry>
+        
+        <Label 
+            Text="Surname:" />
+        
+        <Entry x:Name="SurnameTxt" Text="" 
+               MaxLength="35" 
+               TextChanged="OnEntryTextChanged"
+               Unfocused="ValidateFields"></Entry>
+        
+        <!--Kods ņemts no pasniedzējas piemēra-->
+        <Picker x:Name="GenderPicker"
+        Title="Select gender">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Woman</x:String>
+                    <x:String>Man</x:String>
+                    <x:String>Other</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <Label 
+        Text="Student id:" />
+        <Entry x:Name="studentIDTxt" Text=""
+               MaxLength="10"
+               Unfocused="ValidateFields"
+               TextChanged="OnIDTextChanged"
+               ></Entry>
+        <Label 
+        Text="To press the button, you must first exist any entry field with your mouse. CLICK ANYWHERE OUTSIED THE ENTRY FIELD!" />
+        <Button x:Name="CreateStudentBtn" Text="Create student" Clicked="CreateStudentBtn_Clicked" IsEnabled="False"></Button>
+        <!--Šeit tiks printēti dati, lai tos var pārbaudīt-->
+        <Label x:Name="ResultLbl"
+           Text=""
+           VerticalOptions="Center"
+           HorizontalOptions="Center"
+        ></Label>
+    </VerticalStackLayout>
+</ContentPage>

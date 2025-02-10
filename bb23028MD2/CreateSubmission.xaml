@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bb23028MD2.CreateSubmission"
+             Title="CreateSubmission" NavigatedTo="ContentPage_NavigatedTo">
+    <VerticalStackLayout Margin="10" Spacing="10">
+
+
+        <DatePicker x:Name="DateTxt">
+        </DatePicker>
+        <TimePicker x:Name="TimeTxt" >
+        </TimePicker>
+        
+        <Picker x:Name="StudentPicker" Unfocused="ValidateFields"
+        Title="Select student"
+        ItemsSource="{Binding StudentList}"
+        ItemDisplayBinding="{Binding FullName}" />
+        
+        <Picker x:Name="AssignmentPicker" Unfocused="ValidateFields"
+        Title="Select assignment"
+        ItemsSource="{Binding AssignmentList}"
+        ItemDisplayBinding="{Binding Description}"
+         />
+
+        <Label 
+        Text="Score:" />
+        <Entry x:Name="ScoreTxt" 
+               Text=""
+               TextChanged="OnEntryTextChanged"
+               Unfocused="ValidateFields"
+               ></Entry>
+        <Label 
+         Text="To press the button, you must first exist any entry field with your mouse. CLICK ANYWHERE OUTSIED THE ENTRY FIELD!" />
+        <Button x:Name="CreateSubmissionBtn" Text="Create submission" Clicked="CreateSubmissionBtn_clicked" IsEnabled="False"></Button>
+        <Button x:Name="EditSubmissionBtn" Text="Edit submission" Clicked="EditSubmissionBtn_clicked" IsVisible="False" IsEnabled="False"></Button>
+        <Label x:Name="ResultLbl" Text="" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+    </VerticalStackLayout>
+</ContentPage>

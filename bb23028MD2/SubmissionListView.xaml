@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bb23028MD2.SubmissionListView"
+             Title="SubmissionListView" NavigatedTo="ContentPage_NavigatedTo">
+    <VerticalStackLayout>
+        <!--Izmanto CollectionView un binding, lai noteiktā formā parādītu visus "Items" no kolekcija atkārtoti ar 2 pogām: Edit un Delete. Kods tika ņemts no pasniedzējas piemēra 7.lekcijā-->
+        <CollectionView ItemsSource="{Binding SubmissionList}" VerticalOptions="FillAndExpand">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal" Padding="10">
+                        <Label Text="{Binding Assignment.Description}" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                        <Label Text="{Binding Student.FullName}" VerticalOptions="Center" HorizontalOptions="Center" Margin="20,0,20,0"></Label>
+                        <Button Text="Edit" Clicked="EditClicked"
+                        BindingContext="{Binding}"
+                        HorizontalOptions="End"
+                        VerticalOptions="Center" Margin="0,0,20,0"></Button>
+                        <Button Text="Delete" Clicked="DeleteClicked"
+                        
+                        BindingContext="{Binding}"
+                        HorizontalOptions="End"
+                        VerticalOptions="Center"
+                        ></Button>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

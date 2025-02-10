@@ -8,14 +8,23 @@ public class InterfaceImplementation : IDataManager
 {
     public Collections collection = new Collections();
     //Metode “print”, kas atgriež kā tekstu informāciju par visiem kolekcijās (7. Punkts) esošajiem elementiem.
-    public void Print() // kods ņemts no lekcijas piemēra
+    public string Print() // kods ņemts no lekcijas piemēra
     {
         string text = "";
-        if (collection._personList != null)
+      
+        if (collection._studentList != null)
         {
-            foreach (var person in collection._personList)
+            foreach (var student in collection._studentList)
             {
-                text += person.ToString() + Environment.NewLine;
+                text += student.ToString() + Environment.NewLine;
+
+            }
+        }
+        if (collection._teacherList != null)
+        {
+            foreach (var teacher in collection._teacherList)
+            {
+                text += teacher.ToString() + Environment.NewLine;
 
             }
         }
@@ -43,7 +52,7 @@ public class InterfaceImplementation : IDataManager
 
             }
         }
-        Console.WriteLine(text);
+        return text;
 
     }
 
@@ -119,10 +128,10 @@ public class InterfaceImplementation : IDataManager
     //    Metode "reset", kas izdzēš visus datus.
     public void Reset() //kods ņemts no lekcijas piemēra
     {
-        collection._personList?.Clear();
+        collection._studentList?.Clear();
+        collection._teacherList?.Clear();
         collection._courseList?.Clear();
         collection._assignementList?.Clear();
         collection._submissionList?.Clear();
-
     }
 }

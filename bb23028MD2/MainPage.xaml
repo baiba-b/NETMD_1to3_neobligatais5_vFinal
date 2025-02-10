@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bb23028MD2.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="cat.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="cat typing" />
+            <Label Text="Bilde iegūta no: https://giphy.com/gifs/content-7NoNw4pMNTvgc" 
+               FontSize="12" 
+               HorizontalOptions="Center"
+               TextColor="Gray"/>
+
+            <Label
+                Text="Baiba Bērziņa MD2 risinājums"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Risinājumus var atrast navigācijā kreisajā augšējā stūrī"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bb23028MD2.UniversityComponents"
+             Title="UniversityComponents">
+    <ScrollView Margin="20">
+        <VerticalStackLayout>
+            <Button
+                    x:Name="PrintBtn"
+                    Text="Print" 
+                    SemanticProperties.Hint="Views objects"
+                    Clicked="OnPrintClicked"
+                    HorizontalOptions="Fill"
+                    Margin="20"/>
+
+            <Button
+              x:Name="TestDataBtn"
+              Text="Create test data" 
+              SemanticProperties.Hint="Creates test data"
+              Clicked="OnTestDataCreationClicked"
+              HorizontalOptions="Fill"
+            Margin="20"/>
+
+            <Button
+                x:Name="LoadBtn"
+                Text="Load" 
+                SemanticProperties.Hint="Load data into text document"
+                Clicked="OnLoadClicked"
+                HorizontalOptions="Fill"
+            Margin="20"/>
+
+            <Button
+                x:Name="SaveBtn"
+                Text="Save" 
+                SemanticProperties.Hint="Save data"
+                Clicked="OnSaveClicked"
+                HorizontalOptions="Fill"
+            Margin="20"/>
+
+            <!--  Poga "restart" nav obligāta, bet likās noderīga datu pārbaudei, it īpaši rakstot kodu, tādēļ ieliku un atstāju -->
+            <Button 
+                 x:Name="RestartBtn"
+                 Text="Restart" 
+                 SemanticProperties.Hint="Restart data"
+                 Clicked="OnRestartClicked"
+                 HorizontalOptions="Fill"
+             Margin="20"/>
+
+       <!--Label, lai izprintētu datus-->
+            <Label x:Name="ResultLbl"
+               Text=""
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+            ></Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

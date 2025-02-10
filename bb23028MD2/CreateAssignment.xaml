@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bb23028MD2.CreateAssignment"
+             Title="CreateAssignment" NavigatedTo="ContentPage_NavigatedTo">
+    <VerticalStackLayout Margin="10" Spacing="10">
+        
+        <Label 
+            Text="Select deadline" />
+        <DatePicker x:Name="DateTxt" DateSelected="OnDateSelected">
+        </DatePicker>
+
+        <Picker x:Name="CoursePicker" Unfocused="ValidateFields"
+                Title="Select course"
+                ItemsSource="{Binding CourseList}"
+                ItemDisplayBinding="{Binding Name}" />
+
+        <Label 
+         Text="Description:" />
+        <Entry x:Name="DescriptionTxt" Text="" MaxLength="150" Unfocused="ValidateFields" TextChanged="OnEntryTextChanged"></Entry>
+
+        <Label 
+         Text="To press the button, you must first exist any entry field with your mouse. CLICK ANYWHERE OUTSIED THE ENTRY FIELD!" />
+        <Button x:Name="CreateAssignmentBtn" Text="Create assignment" Clicked="CreateAssignmentBtn_clicked"  IsEnabled="False"></Button>
+        <Button x:Name="EditAssignmentBtn" Text="Edit assignment" Clicked="EditAssignmentBtn_clicked" IsVisible="False"  IsEnabled="False"></Button>
+        <!--Šeit tiks ierakstīts rediģētais/izveidotais Assignment, lai to var pārbaudīt-->
+        <Label x:Name="ResultLbl"
+           Text=""
+           VerticalOptions="Center"
+           HorizontalOptions="Center"
+        ></Label>
+    </VerticalStackLayout>
+</ContentPage>
