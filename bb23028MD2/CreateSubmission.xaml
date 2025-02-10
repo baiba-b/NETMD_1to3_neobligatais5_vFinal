@@ -6,9 +6,9 @@
     <VerticalStackLayout Margin="10" Spacing="10">
 
 
-        <DatePicker x:Name="DateTxt">
+        <DatePicker x:Name="DateTxt" DateSelected="DateChanged" >
         </DatePicker>
-        <TimePicker x:Name="TimeTxt" >
+        <TimePicker x:Name="TimeTxt" Focused="ValidateFields">
         </TimePicker>
         
         <Picker x:Name="StudentPicker" Unfocused="ValidateFields"
@@ -22,6 +22,7 @@
         ItemDisplayBinding="{Binding Description}"
          />
 
+        <Label x:Name="ScoreErrorLbl" Text="" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Red"></Label>
         <Label 
         Text="Score:" />
         <Entry x:Name="ScoreTxt" 

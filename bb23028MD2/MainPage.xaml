@@ -18,9 +18,15 @@
                TextColor="Gray"/>
 
             <Label
-                Text="Baiba Bērziņa MD2 risinājums"
+                Text="Baiba Bērziņa MD3 risinājums"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Visi try-catch ir salikti DBInterfaceImplementation, tā kā visas darbības ar DB notiek caur tā metodēm"
+                TextColor="PaleVioletRed"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level3"/>
 
             <Label
                 Text="Risinājumus var atrast navigācijā kreisajā augšējā stūrī"

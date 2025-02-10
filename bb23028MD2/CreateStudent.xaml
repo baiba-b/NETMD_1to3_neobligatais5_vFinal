@@ -4,25 +4,29 @@
              x:Class="bb23028MD2.CreateStudent"
              Title="CreateStudent" NavigatedTo="ContentPage_NavigatedTo">
     <VerticalStackLayout Margin="10" Spacing="10">
-        <Label 
-            Text="Name:" />
+
+        <Label x:Name ="NameErrorLbl" Text="" TextColor="Red"/>
+        <Label Text="Name:" />
         <Entry x:Name="NameTxt" Text="" 
                MaxLength="35"
-               TextChanged="OnEntryTextChanged"
+               TextChanged="OnEntryTextChangedName"
                Unfocused="ValidateFields"> 
         </Entry>
-        
+
+        <Label x:Name ="SurnameErrorLbl" Text="" TextColor="Red"/>
         <Label 
-            Text="Surname:" />
-        
+            Text="Surname:"/>
+
         <Entry x:Name="SurnameTxt" Text="" 
                MaxLength="35" 
-               TextChanged="OnEntryTextChanged"
+               TextChanged="OnEntryTextChangedSurname"
                Unfocused="ValidateFields"></Entry>
         
         <!--Kods ņemts no pasniedzējas piemēra-->
+        
         <Picker x:Name="GenderPicker"
-        Title="Select gender">
+        Title="Select gender"
+                 SelectedIndexChanged="ValidateFields">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Woman</x:String>
@@ -31,6 +35,7 @@
                 </x:Array>
             </Picker.ItemsSource>
         </Picker>
+        <Label x:Name="StudentIdErrorLbl" Text="" TextColor="Red" />
         <Label 
         Text="Student id:" />
         <Entry x:Name="studentIDTxt" Text=""
@@ -41,6 +46,7 @@
         <Label 
         Text="To press the button, you must first exist any entry field with your mouse. CLICK ANYWHERE OUTSIED THE ENTRY FIELD!" />
         <Button x:Name="CreateStudentBtn" Text="Create student" Clicked="CreateStudentBtn_Clicked" IsEnabled="False"></Button>
+        <Button x:Name="EditStudentBtn" Text="Edit student" Clicked="EditSubmissionBtn_clicked" IsVisible="False"  IsEnabled="False"></Button>
         <!--Šeit tiks printēti dati, lai tos var pārbaudīt-->
         <Label x:Name="ResultLbl"
            Text=""

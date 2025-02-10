@@ -1,22 +1,22 @@
 ﻿using bb23028_MD1;
-using CommunityToolkit.Mvvm.Messaging;
 
 namespace bb23028MD2;
 
 public partial class SubmissionListView : ContentPage
 {
 
-    public InterfaceImplementation? IntImp; //Definēts mainīgais, lai varētu tajā ierakstīt Item datus.
+    public DBInterfaceImplementation? IntImp; //Definēts mainīgais, lai varētu tajā ierakstīt Item datus.
 
     public SubmissionListView()
-    {
-        InitializeComponent();
+    { 
         IntImp = App.IntImp; //Izveidots, lai inicializētu InterfaceImplementation.
         BindingContext = this; //Vajadzīgs, lai izmantotu bindingu.
+        InitializeComponent();
+      
     }
     public List<bb23028_MD1.Submission>? SubmissionList //īpašību, ko rādīs CollectionView Binding (no šejienes ņems datus)
     {
-        get { return IntImp?.collection._submissionList; }
+        get { return IntImp?.SubmissionLists(); }
     }
     private async void EditClicked(object sender, EventArgs e)
     {
@@ -45,13 +45,14 @@ public partial class SubmissionListView : ContentPage
                 bool answer = await DisplayAlert("Caution", "Would you like to delete this assignment?", "Yes", "No"); //Paziņojums, lai pārliecinātos, vai vēlas izdzēst
                 if (answer)
                 {
-                    IntImp?.collection._submissionList?.Remove(submission);
+                    IntImp?.SubmissionRemove(submission);
+                    IntImp.Save();
                     BindingContext = null; //Atjaunina skatu
                     BindingContext = this;
-                    if (UniversityComponents.timeClicked > 0) //atjauno printēto saraksts, ja tas ir iepriekš atvērts
-                    {
-                        WeakReferenceMessenger.Default.Send(new UpdateResultMessage(App.IntImp.collection));
-                    }
+                    //if (UniversityComponents.timeClicked > 0) //atjauno printēto saraksts, ja tas ir iepriekš atvērts
+                    //{
+                    //    WeakReferenceMessenger.Default.Send(new UpdateResultMessage(App.IntImp.collection));
+                    //}
                 }
             }
         }

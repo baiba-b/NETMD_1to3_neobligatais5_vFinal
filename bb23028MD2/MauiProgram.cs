@@ -1,9 +1,15 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using bb23028_MD1;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.Extensions.Logging;
+
 
 namespace bb23028MD2
 {
     public static class MauiProgram
     {
+        public static IConfiguration Configuration { get; set; }
+
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
@@ -14,10 +20,34 @@ namespace bb23028MD2
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+            try
+            {
+                var config = new ConfigurationBuilder()
+                    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                    .Build();
+                
+                builder.Configuration.AddConfiguration(config);
+                builder.Services.TryAddSingleton<IConfiguration>(config);
+            }
+
+
+            catch (Exception ex) { Console.WriteLine($"Error connecting to the database: {ex.Message}"); }
+            
+            builder.Services.AddTransient<AppShell>();
+            builder.Services.AddTransient<AssignmentListView>();
+            builder.Services.AddTransient<CreateAssignment>();
+            builder.Services.AddTransient<CreateStudent>();
+            builder.Services.AddTransient<CreateSubmission>();
+            builder.Services.AddTransient<StudentListView>();
+            builder.Services.AddTransient<SubmissionListView>();
+            builder.Services.AddTransient<UniversityComponents>();
+
+
+
 
 #if DEBUG
-    		builder.Logging.AddDebug();
-#endif
+            builder.Logging.AddDebug();
+#endif          
 
             return builder.Build();
         }

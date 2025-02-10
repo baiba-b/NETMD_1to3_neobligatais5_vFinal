@@ -36,4 +36,9 @@
     Title="Submission list"
     ContentTemplate="{DataTemplate local:SubmissionListView}"
     Route="SubmissionListView" />
+    <ShellContent
+Title="Student list"
+ContentTemplate="{DataTemplate local:StudentListView}"
+Route="StudentListView" />
+    
 </Shell>

@@ -1,20 +1,20 @@
 ﻿namespace bb23028MD2;
 using bb23028_MD1;
-using CommunityToolkit.Mvvm.Messaging;
 
 public partial class AssignmentListView : ContentPage //Komentāri tie paši, kas SubmissionListView
 {
-    public InterfaceImplementation dm;
+    public DBInterfaceImplementation? IntImp;
     public AssignmentListView()
-	{
-        dm = App.IntImp;
+	{ 
+        IntImp = App.IntImp;
         BindingContext = this; 
         InitializeComponent();
-	}
+       
+    }
 
-    public List<bb23028_MD1.Assignement> AssignmentList
+    public List<bb23028_MD1.Assignement>? AssignmentList
     {
-        get { return dm.collection._assignementList; }
+        get { return IntImp.AssignmentLists(); }
     }
 
     private async void EditClicked(object sender, EventArgs e)
@@ -42,13 +42,14 @@ public partial class AssignmentListView : ContentPage //Komentāri tie paši, ka
                 bool answer = await DisplayAlert("Question?", "Would you like to delete this assignment?", "Yes", "No");
                 if (answer)
                 {
-                    dm.collection._assignementList.Remove(f);
+                    IntImp.AssignmentRemove(f);
+                    IntImp.Save();
                     BindingContext = null;
                     BindingContext = this;
-                    if (UniversityComponents.timeClicked > 0) //atjauno printēto saraksts, ja tas ir iepriekš atvērts
-                    {
-                        WeakReferenceMessenger.Default.Send(new UpdateResultMessage(App.IntImp.collection));
-                    }
+                    //if (UniversityComponents.timeClicked > 0) //atjauno printēto saraksts, ja tas ir iepriekš atvērts
+                    //{
+                    //    WeakReferenceMessenger.Default.Send(new UpdateResultMessage(App.IntImp.collection));
+                    //}
                 }
             }
         }

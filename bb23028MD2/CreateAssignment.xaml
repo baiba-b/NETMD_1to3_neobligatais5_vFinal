@@ -4,17 +4,19 @@
              x:Class="bb23028MD2.CreateAssignment"
              Title="CreateAssignment" NavigatedTo="ContentPage_NavigatedTo">
     <VerticalStackLayout Margin="10" Spacing="10">
-        
+
         <Label 
             Text="Select deadline" />
-        <DatePicker x:Name="DateTxt" DateSelected="OnDateSelected">
+        <DatePicker x:Name="DateTxt" DateSelected="OnDateSelected" Focused="ValidateFields">
         </DatePicker>
 
+        <Label x:Name="CoursePickerErrorLbl" Text="" TextColor="Red" />
         <Picker x:Name="CoursePicker" Unfocused="ValidateFields"
                 Title="Select course"
                 ItemsSource="{Binding CourseList}"
                 ItemDisplayBinding="{Binding Name}" />
 
+        <Label x:Name="DescriptionErrorLbl" Text="" TextColor="Red" />
         <Label 
          Text="Description:" />
         <Entry x:Name="DescriptionTxt" Text="" MaxLength="150" Unfocused="ValidateFields" TextChanged="OnEntryTextChanged"></Entry>

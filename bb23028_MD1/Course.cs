@@ -1,8 +1,12 @@
-﻿namespace bb23028_MD1
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace bb23028_MD1
 {
 
     public class Course
     {
+        [Key]
+        public int Id { get; set; }
         public string? Name { get; set; }
         public Teacher? Teacher { get; set; }
 

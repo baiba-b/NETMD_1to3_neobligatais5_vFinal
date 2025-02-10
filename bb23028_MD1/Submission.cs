@@ -1,9 +1,12 @@
-﻿namespace bb23028_MD1;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace bb23028_MD1;
 
 public class Submission
 {
+    [Key]
+    public int Id { get; set; }
     public Assignement? Assignment { get; set; }
-
     public Student? Student { get; set; }
     public DateTime SubmissionTime { get; set; }
     public int Score { get; set; }
@@ -16,7 +19,7 @@ public class Submission
     }
     public Submission()
     {
-        
+
     }
     public override string ToString()
     {
