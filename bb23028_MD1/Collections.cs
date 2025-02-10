@@ -1,24 +1,23 @@
-﻿using System.Collections.ObjectModel;
-
-namespace bb23028_MD1;
+﻿namespace bb23028_MD1;
 
 public class Collections
 {
-    public List<Student>? _studentList = new();
-    public List<Teacher>? _teacherList = new();
+    public List<Person>? _personList = new();
     public List<Course>? _courseList = new();
     public List<Assignement>? _assignementList = new();
     public List<Submission>? _submissionList = new();
 
+   
+
     public void Add(Student student) //override Add metode katrai klasei
     {
         if (student != null)
-        { _studentList?.Add(student); }
+        { _personList?.Add(student); }
     }
     public void Add(Teacher teacher)
     {
         if (teacher != null)
-        { _teacherList?.Add(teacher); }
+        { _personList?.Add(teacher); }
     }
     public void Add(Course course)
     {

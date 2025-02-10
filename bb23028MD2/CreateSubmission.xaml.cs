@@ -49,9 +49,8 @@ public partial class CreateSubmission : ContentPage
     //tiek izmantotas īpašības StudentList un AssignmentList bindingam
     public List<bb23028_MD1.Student> StudentList
     {
-        get
-        {
-            return IntImp.StudentLists();
+        get { 
+            return IntImp.StudentLists(); 
         }
 
     }
@@ -86,7 +85,7 @@ public partial class CreateSubmission : ContentPage
 
     private void OnEntryTextChanged(object sender, TextChangedEventArgs e) //Kļūdu paziņojumi, ja nepareizi ievada datus
     {
-        if (!Regex.IsMatch(ScoreTxt.Text, @"^\d+$"))
+        if (!Regex.IsMatch(ScoreTxt.Text, @"^\d+$")) 
         {
             ScoreErrorLbl.Text = "Warning! This can only contain numbers!";
             ScoreErrorLbl.IsVisible = true;
@@ -142,12 +141,7 @@ public partial class CreateSubmission : ContentPage
     {
         BindingContext = null;
         BindingContext = this;
-        if (!_isEditing) ClearFields();
+        if(!_isEditing) ClearFields();
     }
 
-    private void DateChanged(object sender, DateChangedEventArgs e)
-    {
-        ValidateFields(sender, null);
-
-    }
 }

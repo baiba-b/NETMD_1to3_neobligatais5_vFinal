@@ -20,19 +20,12 @@ namespace bb23028MD2
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
-            try
-            {
-                var config = new ConfigurationBuilder()
-                    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                    .Build();
-                
-                builder.Configuration.AddConfiguration(config);
-                builder.Services.TryAddSingleton<IConfiguration>(config);
-            }
 
-
-            catch (Exception ex) { Console.WriteLine($"Error connecting to the database: {ex.Message}"); }
-            
+            var config = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange:true)
+                .Build();
+            builder.Configuration.AddConfiguration(config);
+            builder.Services.TryAddSingleton<IConfiguration>(config);
             builder.Services.AddTransient<AppShell>();
             builder.Services.AddTransient<AssignmentListView>();
             builder.Services.AddTransient<CreateAssignment>();

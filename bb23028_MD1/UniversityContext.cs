@@ -9,7 +9,7 @@ using System.Configuration;
 namespace bb23028_MD1
 {
     
-    public class UniversityContext : DbContext //creates the database
+    public class UniversityContext : DbContext
     {
         public UniversityContext() {
             _connectionString = "";

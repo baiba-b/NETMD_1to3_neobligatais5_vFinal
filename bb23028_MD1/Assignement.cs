@@ -1,11 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.Contracts;
+﻿using System.Diagnostics.Contracts;
 
 namespace bb23028_MD1;
 public class Assignement
 {
-    [Key]
-    public int Id { get; set; }
     //Nebija datu atribūta Date, tādēļ izmantoju DateOnly
     public DateOnly Deadline { get; set; }
     public Course? Course { get; set; }

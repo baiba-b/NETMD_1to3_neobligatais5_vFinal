@@ -22,7 +22,6 @@ public partial class CreateStudent : ContentPage
     public CreateStudent(Student s)
     {
         InitializeComponent();
-        GenderPicker.ItemsSource = Enum.GetValues(typeof(Gender)).Cast<Gender>().ToList();  // Set Picker ItemsSource from enum values
         IntImp = App.IntImp;
         BindingContext = this; //norāda, ka jāmeklē bindotos datus šajā lapā.
         
@@ -153,7 +152,7 @@ public partial class CreateStudent : ContentPage
     {
         _s.Name = NameTxt.Text;
         _s.Surname = SurnameTxt.Text;
-        _s.PersonGender = (bb23028_MD1.Gender)GenderPicker.SelectedItem;
+        _s.PersonGender = (bb23028_MD1.Gender)Enum.Parse(typeof(bb23028_MD1.Gender), (string)GenderPicker.SelectedItem);
         _s.StudentIdNumder = studentIDTxt.Text;
         ResultLbl.Text = _s.ToString();
         App.IntImp.Save();

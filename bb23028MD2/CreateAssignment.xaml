@@ -7,7 +7,7 @@
 
         <Label 
             Text="Select deadline" />
-        <DatePicker x:Name="DateTxt" DateSelected="OnDateSelected" Focused="ValidateFields">
+        <DatePicker x:Name="DateTxt" DateSelected="OnDateSelected">
         </DatePicker>
 
         <Label x:Name="CoursePickerErrorLbl" Text="" TextColor="Red" />

@@ -6,9 +6,9 @@
     <VerticalStackLayout Margin="10" Spacing="10">
 
 
-        <DatePicker x:Name="DateTxt" DateSelected="DateChanged" >
+        <DatePicker x:Name="DateTxt">
         </DatePicker>
-        <TimePicker x:Name="TimeTxt" Focused="ValidateFields">
+        <TimePicker x:Name="TimeTxt" >
         </TimePicker>
         
         <Picker x:Name="StudentPicker" Unfocused="ValidateFields"

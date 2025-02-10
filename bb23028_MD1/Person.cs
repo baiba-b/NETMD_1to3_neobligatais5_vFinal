@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Reflection.Emit;
+﻿using System.Reflection.Emit;
 using System.Xml.Serialization;
 
 namespace bb23028_MD1
@@ -8,9 +7,6 @@ namespace bb23028_MD1
     [XmlInclude(typeof(Teacher))]
     public abstract class Person
     {
-        [Key]
-        public int Id { get; set; }
-
         private string? name;
         public string? Name
         {

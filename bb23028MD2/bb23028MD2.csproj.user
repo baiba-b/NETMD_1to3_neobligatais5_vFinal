@@ -12,13 +12,7 @@
     <MauiXaml Update="CreateAssignment.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="CreateStudent.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
     <MauiXaml Update="CreateSubmission.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="StudentListView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="SubmissionListView.xaml">

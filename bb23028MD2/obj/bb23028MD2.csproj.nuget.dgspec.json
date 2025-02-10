@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\baiba\\source\\repos\\bb23028_MD1\\bb23028MD2\\bb23028MD2.csproj": {}
+    "C:\\Users\\baiba\\Desktop\\md\\Baiba_Berzina_NeobligataisMD5\\bb23028_MD1\\bb23028MD2\\bb23028MD2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\baiba\\source\\repos\\bb23028_MD1\\bb23028MD2\\bb23028MD2.csproj": {
+    "C:\\Users\\baiba\\Desktop\\md\\Baiba_Berzina_NeobligataisMD5\\bb23028_MD1\\bb23028MD2\\bb23028MD2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\baiba\\source\\repos\\bb23028_MD1\\bb23028MD2\\bb23028MD2.csproj",
+        "projectUniqueName": "C:\\Users\\baiba\\Desktop\\md\\Baiba_Berzina_NeobligataisMD5\\bb23028_MD1\\bb23028MD2\\bb23028MD2.csproj",
         "projectName": "bb23028MD2",
-        "projectPath": "C:\\Users\\baiba\\source\\repos\\bb23028_MD1\\bb23028MD2\\bb23028MD2.csproj",
+        "projectPath": "C:\\Users\\baiba\\Desktop\\md\\Baiba_Berzina_NeobligataisMD5\\bb23028_MD1\\bb23028MD2\\bb23028MD2.csproj",
         "packagesPath": "C:\\Users\\baiba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\baiba\\source\\repos\\bb23028_MD1\\bb23028MD2\\obj\\",
+        "outputPath": "C:\\Users\\baiba\\Desktop\\md\\Baiba_Berzina_NeobligataisMD5\\bb23028_MD1\\bb23028MD2\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -37,32 +37,32 @@
           "net8.0-android34.0": {
             "targetAlias": "net8.0-android",
             "projectReferences": {
-              "C:\\Users\\baiba\\source\\repos\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj": {
-                "projectPath": "C:\\Users\\baiba\\source\\repos\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj"
+              "C:\\Users\\baiba\\Desktop\\md\\Baiba_Berzina_NeobligataisMD5\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj": {
+                "projectPath": "C:\\Users\\baiba\\Desktop\\md\\Baiba_Berzina_NeobligataisMD5\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj"
               }
             }
           },
           "net8.0-ios18.0": {
             "targetAlias": "net8.0-ios",
             "projectReferences": {
-              "C:\\Users\\baiba\\source\\repos\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj": {
-                "projectPath": "C:\\Users\\baiba\\source\\repos\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj"
+              "C:\\Users\\baiba\\Desktop\\md\\Baiba_Berzina_NeobligataisMD5\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj": {
+                "projectPath": "C:\\Users\\baiba\\Desktop\\md\\Baiba_Berzina_NeobligataisMD5\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj"
               }
             }
           },
           "net8.0-maccatalyst18.0": {
             "targetAlias": "net8.0-maccatalyst",
             "projectReferences": {
-              "C:\\Users\\baiba\\source\\repos\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj": {
-                "projectPath": "C:\\Users\\baiba\\source\\repos\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj"
+              "C:\\Users\\baiba\\Desktop\\md\\Baiba_Berzina_NeobligataisMD5\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj": {
+                "projectPath": "C:\\Users\\baiba\\Desktop\\md\\Baiba_Berzina_NeobligataisMD5\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj"
               }
             }
           },
           "net8.0-windows10.0.19041": {
             "targetAlias": "net8.0-windows10.0.19041.0",
             "projectReferences": {
-              "C:\\Users\\baiba\\source\\repos\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj": {
-                "projectPath": "C:\\Users\\baiba\\source\\repos\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj"
+              "C:\\Users\\baiba\\Desktop\\md\\Baiba_Berzina_NeobligataisMD5\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj": {
+                "projectPath": "C:\\Users\\baiba\\Desktop\\md\\Baiba_Berzina_NeobligataisMD5\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj"
               }
             }
           }
@@ -113,16 +113,16 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.83, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.83, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.11, )",
+              "version": "[8.0.12, )",
               "autoReferenced": true
             },
             "System.Configuration.ConfigurationManager": {
@@ -171,7 +171,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         },
         "net8.0-ios18.0": {
           "targetAlias": "net8.0-ios",
@@ -206,16 +206,16 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.83, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.83, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.11, )",
+              "version": "[8.0.12, )",
               "autoReferenced": true
             },
             "System.Configuration.ConfigurationManager": {
@@ -252,7 +252,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         },
         "net8.0-maccatalyst18.0": {
           "targetAlias": "net8.0-maccatalyst",
@@ -287,16 +287,16 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.83, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.83, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.11, )",
+              "version": "[8.0.12, )",
               "autoReferenced": true
             },
             "System.Configuration.ConfigurationManager": {
@@ -334,7 +334,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         },
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
@@ -369,11 +369,11 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.83, )"
+              "version": "[8.0.100, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.83, )"
+              "version": "[8.0.100, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
@@ -394,7 +394,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
-              "version": "[10.0.19041.54, 10.0.19041.54]"
+              "version": "[10.0.19041.57, 10.0.19041.57]"
             }
           ],
           "frameworkReferences": {
@@ -405,7 +405,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -432,14 +432,14 @@
         }
       }
     },
-    "C:\\Users\\baiba\\source\\repos\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj": {
+    "C:\\Users\\baiba\\Desktop\\md\\Baiba_Berzina_NeobligataisMD5\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\baiba\\source\\repos\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj",
+        "projectUniqueName": "C:\\Users\\baiba\\Desktop\\md\\Baiba_Berzina_NeobligataisMD5\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj",
         "projectName": "bb23028_MD1",
-        "projectPath": "C:\\Users\\baiba\\source\\repos\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj",
+        "projectPath": "C:\\Users\\baiba\\Desktop\\md\\Baiba_Berzina_NeobligataisMD5\\bb23028_MD1\\bb23028_MD1\\bb23028_MD1.csproj",
         "packagesPath": "C:\\Users\\baiba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\baiba\\source\\repos\\bb23028_MD1\\bb23028_MD1\\obj\\",
+        "outputPath": "C:\\Users\\baiba\\Desktop\\md\\Baiba_Berzina_NeobligataisMD5\\bb23028_MD1\\bb23028_MD1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -520,7 +520,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

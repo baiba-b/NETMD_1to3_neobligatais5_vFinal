@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace bb23028_MD1
 {
-    public class DBInterfaceImplementation //all of the methods for the databse - similar to interfaceimplementation
+    public class DBInterfaceImplementation
     {
         private UniversityContext context;
         private string _connectionString;
@@ -54,7 +54,7 @@ namespace bb23028_MD1
                 if (submission != null)
                 {
                     context.Submissions.Remove(submission);
-                    context.SaveChanges(); // Saglabā izmaiņas datubāzē
+                    context.SaveChanges(); // Ensure the change is persisted in the database
                 }
             }
             catch (Exception ex) { Console.WriteLine($"Error deleting entity: {ex.Message}"); }
@@ -66,7 +66,7 @@ namespace bb23028_MD1
                 if (student != null)
                 {
                     context.Students.Remove(student);
-                    context.SaveChanges(); //Saglabā izmaiņas datubāzē
+                    context.SaveChanges(); // Ensure the change is persisted in the database
                 }
             }
             catch (Exception ex) { Console.WriteLine($"Error deleting entity: {ex.Message}"); }
@@ -78,7 +78,7 @@ namespace bb23028_MD1
                 if (assignement != null)
                 {
                     context.Assignements.Remove(assignement);
-                    context.SaveChanges(); // Saglabā izmaiņas datubāzē
+                    context.SaveChanges(); // Ensure the change is persisted in the database
                 }
             }
             catch (Exception ex) { Console.WriteLine($"Error deleting entity: {ex.Message}"); }
@@ -90,7 +90,7 @@ namespace bb23028_MD1
                 if (course != null)
                 {
                     context.Courses.Remove(course);
-                    context.SaveChanges(); // Saglabā izmaiņas datubāzē
+                    context.SaveChanges(); // Ensure the change is persisted in the database
                 }
             }
             catch (Exception ex) { Console.WriteLine($"Error deleting entity: {ex.Message}"); }

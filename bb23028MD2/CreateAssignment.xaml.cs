@@ -77,7 +77,6 @@ public partial class CreateAssignment : ContentPage
 
     private void OnDateSelected(object sender, DateChangedEventArgs e)
     {
-        ValidateFields(sender, null);
         if (DateTxt.Date < DateTime.Today)
         {
             CoursePickerErrorLbl.IsVisible = true;
@@ -133,17 +132,6 @@ public partial class CreateAssignment : ContentPage
         BindingContext = null;
         BindingContext = this;
         if (!_isEditing) ClearFields();
-        if (_isEditing)
-        {
-            if (DateTxt.Date < DateTime.Today)
-            {
-                CoursePickerErrorLbl.IsVisible = true;
-                CoursePickerErrorLbl.Text = "Warning! You can't select a date before today!";
-                CreateAssignmentBtn.IsEnabled = false;
-                EditAssignmentBtn.IsEnabled = false;
-            }
-            else CoursePickerErrorLbl.IsVisible = false;
-        }
 
     }
 

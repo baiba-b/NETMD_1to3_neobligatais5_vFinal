@@ -20,79 +20,79 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = bb23028MD2
-build_property.ProjectDir = C:\Users\baiba\source\repos\bb23028_MD1\bb23028MD2\
+build_property.ProjectDir = C:\Users\baiba\Desktop\md\Baiba_Berzina_NeobligataisMD5\bb23028_MD1\bb23028MD2\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/baiba/source/repos/bb23028_MD1/bb23028MD2/App.xaml]
+[C:/Users/baiba/Desktop/md/Baiba_Berzina_NeobligataisMD5/bb23028_MD1/bb23028MD2/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = bb23028MD2.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/baiba/source/repos/bb23028_MD1/bb23028MD2/AppShell.xaml]
+[C:/Users/baiba/Desktop/md/Baiba_Berzina_NeobligataisMD5/bb23028_MD1/bb23028MD2/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = bb23028MD2.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/baiba/source/repos/bb23028_MD1/bb23028MD2/AssignmentListView.xaml]
+[C:/Users/baiba/Desktop/md/Baiba_Berzina_NeobligataisMD5/bb23028_MD1/bb23028MD2/AssignmentListView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = bb23028MD2.AssignmentListView.xaml
 build_metadata.AdditionalFiles.TargetPath = AssignmentListView.xaml
 build_metadata.AdditionalFiles.RelativePath = AssignmentListView.xaml
 
-[C:/Users/baiba/source/repos/bb23028_MD1/bb23028MD2/CreateAssignment.xaml]
+[C:/Users/baiba/Desktop/md/Baiba_Berzina_NeobligataisMD5/bb23028_MD1/bb23028MD2/CreateAssignment.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = bb23028MD2.CreateAssignment.xaml
 build_metadata.AdditionalFiles.TargetPath = CreateAssignment.xaml
 build_metadata.AdditionalFiles.RelativePath = CreateAssignment.xaml
 
-[C:/Users/baiba/source/repos/bb23028_MD1/bb23028MD2/CreateStudent.xaml]
+[C:/Users/baiba/Desktop/md/Baiba_Berzina_NeobligataisMD5/bb23028_MD1/bb23028MD2/CreateStudent.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = bb23028MD2.CreateStudent.xaml
 build_metadata.AdditionalFiles.TargetPath = CreateStudent.xaml
 build_metadata.AdditionalFiles.RelativePath = CreateStudent.xaml
 
-[C:/Users/baiba/source/repos/bb23028_MD1/bb23028MD2/CreateSubmission.xaml]
+[C:/Users/baiba/Desktop/md/Baiba_Berzina_NeobligataisMD5/bb23028_MD1/bb23028MD2/CreateSubmission.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = bb23028MD2.CreateSubmission.xaml
 build_metadata.AdditionalFiles.TargetPath = CreateSubmission.xaml
 build_metadata.AdditionalFiles.RelativePath = CreateSubmission.xaml
 
-[C:/Users/baiba/source/repos/bb23028_MD1/bb23028MD2/MainPage.xaml]
+[C:/Users/baiba/Desktop/md/Baiba_Berzina_NeobligataisMD5/bb23028_MD1/bb23028MD2/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = bb23028MD2.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/baiba/source/repos/bb23028_MD1/bb23028MD2/Resources/Styles/Colors.xaml]
+[C:/Users/baiba/Desktop/md/Baiba_Berzina_NeobligataisMD5/bb23028_MD1/bb23028MD2/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = bb23028MD2.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/baiba/source/repos/bb23028_MD1/bb23028MD2/Resources/Styles/Styles.xaml]
+[C:/Users/baiba/Desktop/md/Baiba_Berzina_NeobligataisMD5/bb23028_MD1/bb23028MD2/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = bb23028MD2.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/baiba/source/repos/bb23028_MD1/bb23028MD2/StudentListView.xaml]
+[C:/Users/baiba/Desktop/md/Baiba_Berzina_NeobligataisMD5/bb23028_MD1/bb23028MD2/StudentListView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = bb23028MD2.StudentListView.xaml
 build_metadata.AdditionalFiles.TargetPath = StudentListView.xaml
 build_metadata.AdditionalFiles.RelativePath = StudentListView.xaml
 
-[C:/Users/baiba/source/repos/bb23028_MD1/bb23028MD2/SubmissionListView.xaml]
+[C:/Users/baiba/Desktop/md/Baiba_Berzina_NeobligataisMD5/bb23028_MD1/bb23028MD2/SubmissionListView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = bb23028MD2.SubmissionListView.xaml
 build_metadata.AdditionalFiles.TargetPath = SubmissionListView.xaml
 build_metadata.AdditionalFiles.RelativePath = SubmissionListView.xaml
 
-[C:/Users/baiba/source/repos/bb23028_MD1/bb23028MD2/UniversityComponents.xaml]
+[C:/Users/baiba/Desktop/md/Baiba_Berzina_NeobligataisMD5/bb23028_MD1/bb23028MD2/UniversityComponents.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = bb23028MD2.UniversityComponents.xaml
 build_metadata.AdditionalFiles.TargetPath = UniversityComponents.xaml

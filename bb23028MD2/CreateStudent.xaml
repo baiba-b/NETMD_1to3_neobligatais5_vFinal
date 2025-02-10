@@ -25,8 +25,7 @@
         <!--Kods ņemts no pasniedzējas piemēra-->
         
         <Picker x:Name="GenderPicker"
-        Title="Select gender"
-                 SelectedIndexChanged="ValidateFields">
+        Title="Select gender">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Woman</x:String>
